@@ -1,0 +1,12 @@
+[submodule "third-party/rocksdb"]
+	path = third-party/rocksdb
+	url = https://github.com/facebook/rocksdb.git
+[submodule "third-party/fio"]
+	path = third-party/fio
+	url = https://github.com/axboe/fio.git
+[submodule "third-party/libbpf"]
+	path = third-party/libbpf
+	url = https://github.com/libbpf/libbpf
+[submodule "third-party/flamegraph"]
+	path = third-party/flamegraph
+	url = https://github.com/brendangregg/FlameGraph.git

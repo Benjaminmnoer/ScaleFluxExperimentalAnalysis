@@ -1,0 +1,18 @@
+[global]
+ioengine=io_uring
+direct=1
+group_reporting=1
+filename=/dev/nvme2n1 # sfdv0n1 = scaleflux, nvme1n1 = intel ssd, nvme2n1 = optane ssd
+
+[sequential-fill]
+description=Sequential fill phase
+rw=write
+bs=1M
+iodepth=16
+
+[random-write-steady]
+stonewall
+description=Random overwrite phase
+rw=randwrite
+bs=4k
+iodepth=32

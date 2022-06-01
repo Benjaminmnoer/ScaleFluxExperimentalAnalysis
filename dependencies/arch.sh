@@ -1,0 +1,1 @@
+sudo pacman -S zlib bzip2 lz4 snappy zstd gflags cmake llvm libelf clang jdk-openjdk python3 libaio

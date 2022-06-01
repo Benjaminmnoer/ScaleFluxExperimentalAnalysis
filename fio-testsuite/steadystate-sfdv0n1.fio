@@ -1,0 +1,19 @@
+[global]
+ioengine=io_uring
+direct=1
+group_reporting=1
+filename=/dev/sfdv0n1
+buffer_compress_percentage=50
+
+[sequential-fill]
+description=Sequential fill phase
+rw=write
+bs=1M
+iodepth=16
+
+[random-write-steady]
+stonewall
+description=Random overwrite phase
+rw=randwrite
+bs=4k
+iodepth=32

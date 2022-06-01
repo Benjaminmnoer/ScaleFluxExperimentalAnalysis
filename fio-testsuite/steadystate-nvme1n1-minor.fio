@@ -1,0 +1,12 @@
+[global]
+ioengine=io_uring
+direct=1
+group_reporting=1
+filename=/dev/nvme1n1
+
+[random-write-steady]
+stonewall
+description=Random overwrite phase
+rw=randwrite
+bs=4k
+iodepth=16
